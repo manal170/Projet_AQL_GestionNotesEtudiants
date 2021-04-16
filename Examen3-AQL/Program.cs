@@ -7,6 +7,11 @@ namespace Examen3_AQL
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Console.WriteLine("**************************");
+
+            string nom = "manal";
+            Console.WriteLine(nom);
         }
     }
 }
