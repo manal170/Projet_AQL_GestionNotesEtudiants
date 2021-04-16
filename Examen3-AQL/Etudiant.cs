@@ -15,5 +15,7 @@ namespace Examen3_AQL
         public string Nom { get; set; }
 
         public string Prenom { get; set; }
+
+        public int NumeroEtudiant { get; set; }
     }
 }

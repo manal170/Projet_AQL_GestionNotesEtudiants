@@ -19,7 +19,7 @@ namespace Examen3_AQL
 
             Console.WriteLine(x + n);
 
-            Console.WriteLine("Le produit " : x * n);
+            Console.WriteLine("Le produit " + x * n);
 
 
         }
