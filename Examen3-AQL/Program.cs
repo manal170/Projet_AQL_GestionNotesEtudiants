@@ -12,6 +12,12 @@ namespace Examen3_AQL
 
             string nom = "manal";
             Console.WriteLine(nom);
+
+            int n = 25;
+
+            int x = 887;
+
+            Console.WriteLine(x + n);
         }
     }
 }
