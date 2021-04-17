@@ -4,11 +4,9 @@ public class Cours
 {
 	public int numeroDeCours = 100;
 	public string titre;
-	public int code;
+	public int code = 0;
 
-	public int NumeroDeCours { get;set }
 	public string Titre { get; set }
-	public int Code { get; set }
 
 	public Cours(string titre, int numeroDeCours)
     {
@@ -20,4 +18,9 @@ public class Cours
 	{
 		code++;
 	}
-}
+	
+	public void Afficher()
+
+	{ 
+		Console.WriteLine(" Le nom du cours est : " + this.titre + '\n' + "Numero du cours est : " + numeroDeCours + '\n'+ "Code du cours est : " + code )
+	}
