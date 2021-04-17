@@ -4,7 +4,7 @@ public class Cours
 {
 	public int numeroDeCours = 100;
 	public string titre;
-	public int code = 0;
+	public int code;
 
 	public int NumeroDeCours { get;set }
 	public string Titre { get; set }
