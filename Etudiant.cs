@@ -2,27 +2,15 @@
 
 public class Etudiant
 {
-	private static int numero_etudaint = 0;
-		public String nom;
-		public String prenom;
-
-
+	        //Déclaration des Attributs 
 		public String Nom { get; set; }
 		public String Prenom { get; set; }
 		public int Code { get; private set; }
-
+                //Déclaration des constructeus 
 		public Etudiant(String nom,String prenom)
 		{
 			this.Nom = nom;
 			this.Prenom = prenom;
-			this.Code = ++numero_etudaint;
-		}
-		
-		public void Afficher()
-		{
-		Console.WriteLine(" Le numero d'étudiant : " + this.Code + '\n'
-				  + "Le nom de l'étudiant: " + this.Nom + '\n'
-				  + "Le prenom de l'étudiant : " + this.Prenom);
 		}
 	}
 	
