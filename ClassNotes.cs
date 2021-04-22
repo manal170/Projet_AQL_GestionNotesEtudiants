@@ -4,33 +4,33 @@ public class Notes
 {
 
 
-	int numero_etudiant;
-	int numero_cours;
-	double UA1, UA2, UA3;
+	public int numero_etudiant;
+	public int numero_cours;
+	public double UA1, UA2, UA3;
 
-	int a;
+	
 
 	public double Note { get; set; }
-	public int Numero_etudiant { get; set; }
-	public int Numero_cours { get; set; }
+	public int NumeroEtudiant { get; set; }
+	public int NumeroCours { get; set; }
 
 	public Notes(int numero_etudiant, int numero_cours)
 	{
-		this.Numero_etudiant = numero_etudiant;
-		this.Numero_cours = numero_cours;
+		this.NumeroEtudiant = numero_etudiant;
+		this.NumeroCours = numero_cours;
 	}
 
 
-	public double CalculNotes()
+	public double calculNotes()
 	{
 
 		return double note = UA1 * 0.35 + UA2 * 0.30 + UA3 * 0.35;
 	}
 
-	public void Afficher()
+	public void afficher()
 	{
-		Console.WriteLine(" Le numero d'étudiant est : " + this.num + '\n'
-							+ "Numero du cours est : " + numeroDeCours + '\n'
-							+ "Note de l'étudiant est : " + CalculNotes());
+		Console.WriteLine(" Le numero d'étudiant est : " + this.NumeroEtudiant  + '\n'
+							+ "Numero du cours est : " + this.NumeroCours + '\n'
+							+ "Note de l'étudiant est : " + this.calculNotes());
 	}
 }
