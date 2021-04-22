@@ -18,11 +18,11 @@ namespace ConsoleApp2
                 {
                     if (reponse != "o")
                     {
-                        Console.WriteLine("Entrer votre nom :");
+                        Console.Write("Entrer votre nom :");
                         string nomEtudiantSaisie = Console.ReadLine();
-                        Console.WriteLine("Entrer votre prenom :");
+                        Console.Write("Entrer votre prenom :");
                         string prenomEtudiantSaisie = Console.ReadLine();
-                        Console.WriteLine("Saisir un numero d'etudiant :");
+                        Console.Write("Saisir un numero d'etudiant :");
                         int numeroEtudiantSaisie = int.Parse(Console.ReadLine());
                         Etudiant e1 = new Etudiant(nomEtudiantSaisie, prenomEtudiantSaisie);
 
@@ -46,16 +46,16 @@ namespace ConsoleApp2
                         while (ajoutCours == "o")
                         {
 
-                            Console.WriteLine("Saisir le titre du cours :");
+                            Console.Write("Saisir le titre du cours :");
                             string titreCourSaisie = Console.ReadLine();
-                            Console.WriteLine("Saisir le numero du cours :");
+                            Console.Write("Saisir le numero du cours :");
                             int numeroCousSaisie = int.Parse(Console.ReadLine());
                             Cours c1 = new Cours(titreCourSaisie, numeroCousSaisie);
-                            Console.WriteLine("Saisir la note de la 1 ere evaluation du cours :");
+                            Console.Write("Saisir la note de la 1 ere evaluation du cours :");
                             double eV1 = double.Parse(Console.ReadLine());
-                            Console.WriteLine("Saisir la note de la 2 eme evaluation du cours :");
+                            Console.Write("Saisir la note de la 2 eme evaluation du cours :");
                             double eV2 = double.Parse(Console.ReadLine());
-                            Console.WriteLine("Saisir la note de la 3 eme evaluation du cours :");
+                            Console.Write("Saisir la note de la 3 eme evaluation du cours :");
                             double eV3 = double.Parse(Console.ReadLine());
                             Notes n1 = new Notes(numeroEtudiantSaisie, numeroCousSaisie);
                             n1.CalculNotes(eV1, eV2, eV3);
@@ -84,7 +84,7 @@ namespace ConsoleApp2
                 while (reponse == "b")
                 {
 
-                    Console.WriteLine("Saisir le numero d'etudaint :");
+                    Console.Write("Saisir le numero d'etudaint :");
                     int numeroEtudiantSaisie = int.Parse(Console.ReadLine());
                     string path = @"c:\users\allao\" + numeroEtudiantSaisie + ".txt";
                     using (StreamReader sr = File.OpenText(path))
